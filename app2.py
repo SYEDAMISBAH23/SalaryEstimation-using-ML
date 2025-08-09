@@ -20,7 +20,7 @@ feature_order = joblib.load("features.pkl")
 # Sidebar Section
 # --------------------
 with st.sidebar:
-    st.image("C:/Users/misba/Desktop/3135706.png", width=80) 
+    st.image("3135706.png", width=80) 
     st.header("📊 About This Tool")
     st.markdown("""
         This salary estimator uses a **machine learning model** trained  
@@ -114,4 +114,5 @@ if predict_button:
     fig = px.bar(df_input, x="Feature", y="Value", color="Feature",
                  title="Your Input Profile", text_auto=True)
     st.plotly_chart(fig, use_container_width=True)
+
  
